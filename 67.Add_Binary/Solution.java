@@ -10,14 +10,27 @@ Return "100".
 public class Solution {
 	public String addBinary(String a, String b) {
         String r="";
+        // if(a.length() < b.length()){
+        //     String tmp = a;
+        //     a = b;
+        //     b = tmp;
+        // }        
         if(a.length()<=0 || b.length()<=0){
         	return null;
         }
         else{
 	        int i_a = a.length()-1, i_b =  b.length()-1;
 	        int carry=0;
+	  //       System.out.println('0'-'0');
+	  //      	System.out.println((int)('0'-'0'));
+			// System.out.println('0'+'1');
+	  //      	System.out.println((int)('0'+'1'));
+
 	        while(i_a>=0 && i_b>=0)
 	        {
+            // int bit = (int)(a.charAt(pa) - '0') + (int)(b.charAt(pb) - '0') + carries;
+            // r = String.valueOf(sum % 2) + rst;
+            // carries = sum / 2;    	    	
     	    	int bit = Character.getNumericValue(a.charAt(i_a))+
     	    		Character.getNumericValue(b.charAt(i_b))+ carry;
     	    	if(bit%2==1){//0+1 (1+0), 1+1+1
