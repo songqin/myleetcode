@@ -63,7 +63,7 @@ public class Solution {
 	        		}
 	        		i_b--;
 	        	}
-	        }
+	        }	
 	        else{
 	        	while(i_a>=0){
 	        		bit =Character.getNumericValue(a.charAt(i_a)) + carry;
