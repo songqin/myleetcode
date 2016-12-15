@@ -1,5 +1,5 @@
 /*
-
+Template File for All Questions
 */
 
 public class Solution {
